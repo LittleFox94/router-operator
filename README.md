@@ -1,8 +1,19 @@
 # router-operator
-// TODO(user): Add simple overview of use/purpose
+
+Routers in your Kubernetes Cluster? It's more likely than you think!
 
 ## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+
+This adds some CRDs and controllers to run (BGP) routers in your Kubernetes
+cluster, ready to talk to the outside world or just something private (like
+dn42, check that out!).
+
+Future integration with MetalLB is planned.
+
+This is heavily work-in-progress and so far was only tested running locally
+with a kubeconfig that has `cluster-admin`, so expect quite a lof of RBAC
+issues (since I worked on this with some very long interruptions and didn't
+always remember where I stopped the last time..)
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
