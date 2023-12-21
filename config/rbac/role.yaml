@@ -1,0 +1,110 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - announcements
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - announcements/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - announcements/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - peers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - peers/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - peers/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - routers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - routers/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - routers/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - sessions
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - sessions/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - sessions/status
+  verbs:
+  - get
+  - patch
+  - update

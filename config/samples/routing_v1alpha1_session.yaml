@@ -1,0 +1,21 @@
+apiVersion: routing.lf-net.org/v1alpha1
+kind: Session
+metadata:
+  labels:
+    app.kubernetes.io/name: session
+    app.kubernetes.io/instance: session-sample
+    app.kubernetes.io/part-of: router-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: router-operator
+  name: session-sample
+spec:
+  router:
+    name: router-sample
+  sourceIP: 192.168.254.15
+
+  peer:
+    name: peer-sample 
+  peerIP: 192.168.254.7
+
+  bgp:
+    myASN: 207880

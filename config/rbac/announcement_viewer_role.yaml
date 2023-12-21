@@ -1,0 +1,27 @@
+# permissions for end users to view announcements.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: announcement-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: router-operator
+    app.kubernetes.io/part-of: router-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: announcement-viewer-role
+rules:
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - announcements
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - routing.lf-net.org
+  resources:
+  - announcements/status
+  verbs:
+  - get

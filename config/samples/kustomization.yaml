@@ -1,0 +1,7 @@
+## Append samples of your project ##
+resources:
+- routing_v1alpha1_router.yaml
+- routing_v1alpha1_announcement.yaml
+- routing_v1alpha1_peer.yaml
+- routing_v1alpha1_session.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

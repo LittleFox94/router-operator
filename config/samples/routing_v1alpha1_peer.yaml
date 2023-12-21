@@ -1,0 +1,13 @@
+apiVersion: routing.lf-net.org/v1alpha1
+kind: Peer
+metadata:
+  labels:
+    app.kubernetes.io/name: peer
+    app.kubernetes.io/instance: peer-sample
+    app.kubernetes.io/part-of: router-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: router-operator
+  name: peer-sample
+spec:
+  bgp:
+    asn: 4242423513

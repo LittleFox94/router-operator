@@ -1,0 +1,12 @@
+apiVersion: routing.lf-net.org/v1alpha1
+kind: Announcement
+metadata:
+  labels:
+    app.kubernetes.io/name: announcement
+    app.kubernetes.io/instance: announcement-sample
+    app.kubernetes.io/part-of: router-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: router-operator
+  name: announcement-sample
+spec:
+  # TODO(user): Add fields here
