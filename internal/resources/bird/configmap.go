@@ -4,8 +4,9 @@ import (
 	"context"
 	"fmt"
 	"net"
-	"router-operator/internal/resources"
 	"strings"
+
+	"praios.lf-net.org/littlefox/router-operator/internal/resources"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"

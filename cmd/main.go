@@ -31,8 +31,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	routingv1alpha1 "router-operator/api/v1alpha1"
-	"router-operator/internal/controller"
+	routingv1alpha1 "praios.lf-net.org/littlefox/router-operator/api/v1alpha1"
+	"praios.lf-net.org/littlefox/router-operator/internal/controller"
 	//+kubebuilder:scaffold:imports
 )
 

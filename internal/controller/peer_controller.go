@@ -24,7 +24,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	routingv1alpha1 "router-operator/api/v1alpha1"
+	routingv1alpha1 "praios.lf-net.org/littlefox/router-operator/api/v1alpha1"
 )
 
 // PeerReconciler reconciles a Peer object

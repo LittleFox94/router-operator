@@ -3,7 +3,8 @@ package bird
 import (
 	"context"
 	"fmt"
-	"router-operator/internal/resources"
+
+	"praios.lf-net.org/littlefox/router-operator/internal/resources"
 
 	"sigs.k8s.io/controller-runtime/pkg/client"
 )

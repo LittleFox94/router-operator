@@ -1,4 +1,4 @@
-module router-operator
+module praios.lf-net.org/littlefox/router-operator
 
 go 1.20
 

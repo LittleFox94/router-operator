@@ -6,7 +6,7 @@ domain: lf-net.org
 layout:
 - go.kubebuilder.io/v4
 projectName: router-operator
-repo: router-operator
+repo: praios.lf-net.org/littlefox/router-operator
 resources:
 - api:
     crdVersion: v1

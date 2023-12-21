@@ -1,7 +1,7 @@
 package resources
 
 import (
-	routingv1alpha1 "router-operator/api/v1alpha1"
+	routingv1alpha1 "praios.lf-net.org/littlefox/router-operator/api/v1alpha1"
 )
 
 type RouterReconciliation struct {
